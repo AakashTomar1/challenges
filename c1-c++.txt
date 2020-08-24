@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int returnLength(string s){
+    if(s=="")
+        return 0;
+    s.pop_back();
+    return 1+returnLength(s);
+}
+
+int main()
+{
+    string s;
+    cin>>s;
+    int x=returnLength(s);
+    cout<<x<<endl;
+}
